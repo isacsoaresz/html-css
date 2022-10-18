@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexíveis</title>
+</head>
+<body>
+    <h1>Imagens Flexíveis</h1>
+    <p>testando imagens:</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/m.png" type="image/png">
+        <img src="imagem/g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Audio em HTML</h1>
+    <p>Vamos aprender a reproduzir audios em html.</p>
+    <a href="midia/musiczip.zip" download="midia/musiczip.zip" type="application/zip" target="_blank">Baixar</a>
+    <audio preload="metadata" controls loop>
+        <source src="midia/music.mp3" type="audio/mpeg">
+        <source src="midia/music.ogg" type="audio/ogg">
+        <source src="midia/music.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não <abbr title=".mp3, ogg, .wav">suporta o formato</abbr> do arquivo do audio. <a href="midia/music.mp3" download="midia/music.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+</body>
+</html>
